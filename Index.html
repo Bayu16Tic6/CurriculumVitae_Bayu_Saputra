@@ -12,7 +12,56 @@
     p, li {
       text-align: justify;
     }
-    
+    .header {
+            text-align: center;
+            padding: 20px;
+            background: #007bff;
+            color: white;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+        }
+	.articles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .article {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .article:hover {
+            transform: scale(1.05);
+        }
+
+        .article img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .article-content {
+            padding: 15px;
+        }
+
+        .article h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        .article p {
+            margin-bottom: 10px;
+        }
+
     footer {
       position: fixed;
       bottom: 0;
@@ -90,6 +139,8 @@
           <ul>
             <li><strong>Universitas Pelita Bangsa</strong> - Teknik Informatika (2023 - Sekarang)</li>
             <li><strong>SMK Islam Darurrohman</strong> - Teknik Komputer dan Jaringan (2018-2021)</li>
+			<li><strong>SMP Islam Almaliyah - Sukatani</strong> (2015-2018)</li>
+		    <li><strong>SDN Sukamantri 01</strong> (2009-2015)</li>
           </ul>
         </section>
 
@@ -150,6 +201,34 @@
         </section>
       </div>
     </div>
+	<div class="container">
+        <div class="header">
+            <h1>My Activity</h1>
+        </div>	
+	</div> 
+	<div class="articles">
+            <div class="article">
+                <img src="Profil.JPG" alt="Article Image">
+                <div class="article-content">
+                    <h2>Judul Artikel 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel urna id quam varius sodales.</p>
+                </div>
+            </div>
+            <div class="article">
+                <img src="https://via.placeholder.com/300" alt="Article Image">
+                <div class="article-content">
+                    <h2>Judul Artikel 2</h2>
+                    <p>Praesent eu nisl lorem. Donec eget urna eu risus molestie feugiat a non eros.</p>
+                </div>
+            </div>
+            <div class="article">
+                <img src="https://via.placeholder.com/300" alt="Article Image">
+                <div class="article-content">
+                    <h2>Judul Artikel 3</h2>
+                    <p>Curabitur scelerisque quam ut augue gravida, at tincidunt orci ultrices.</p>
+                </div>
+            </div>
+        </div>
   </main>
 
   <!-- Footer -->
